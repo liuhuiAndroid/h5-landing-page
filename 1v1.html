@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        charset="utf-8">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/1v1.css">
+    <link href="https://cdn.bootcss.com/Swiper/4.4.2/css/swiper.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="img-container">
+            <img src="images/1v1_image_1.png">
+        </div>
+        <div class="img-container" id="img-container-2">
+            <div class="info">
+                <div class="div-phone">
+                    <input id="et_phone" type="text" placeholder="请输入您的手机号码" />
+                </div>
+                <div class="div-code">
+                    <input id="et_code" type="text" placeholder="请输入验证码" />
+                    <button id="get_code" type="button"></button>
+                </div>
+                <button id="get_course" type="button" />
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="images/1v1_image_3.png">
+        </div>
+    </div>
+    <div style="background-color:#ff772d;padding-bottom:60px;">
+        <div class="swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active">
+                    <img src="images/1v1_banner_1.png" class="main-img">
+                </div>
+                <div class="swiper-slide swiper-slide-next">
+                    <img src="images/1v1_banner_2.png" class="main-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/1v1_banner_3.png" class="main-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loadingToast" style="display:none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content">数据加载中</p>
+        </div>
+    </div>
+</body>
+
+</html>
